@@ -11,9 +11,12 @@ function generatePassword() {
   var passwordLength = prompt("How many characters would you like to have?");
   if (passwordLength < 8 || passwordLength > 128) {
     alert("Your Password must have at least 8 and no more than 128 characters");
+    // Loop Password Generate Function
+    return generatePassword();
   } else {
     alert("Your password will be " + passwordLength + " characters long!");
   };
+  
   
   // Password final variables, empty string to include / add other variable choices
   var passwordFinal = ""
@@ -33,16 +36,17 @@ function generatePassword() {
     passwordFinal = passwordFinal + "0123456789"
   };
 
-   var specialChoice = confirm("Would you like to include special characters?")
+  var specialChoice = confirm("Would you like to include special characters?")
   if (specialChoice == true) {
-    passwordFinal = passwordFinal + "!@#$%"
+    passwordFinal = passwordFinal + "~'!@#$%^&*()-_+={}[]:;.<>?/"
   };
 
   var password = "";
+  
   for (var i = 0; i < passwordLength; i++) {
   var randomIndex = Math.floor(Math.random() * passwordFinal.length);
   password += passwordFinal[randomIndex]; 
-  }
+  };
 
   return password; 
 }};
@@ -59,6 +63,6 @@ function writePassword() {
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
 
-//
+// Notes
 // upperCase.charAt(1)
 // passwordFinal.charAt(Math.floor(Math.random()*passwordFinal.length))
