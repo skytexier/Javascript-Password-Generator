@@ -56,13 +56,19 @@ Upon completing all the prompts, and generating a randomized password, a user ca
 ## Credits
  
 For this project I used a few more sources than normal, including a tutor and peers.
- 
+
+# Web Sources
 The web sources are as follows:
 - GeeksforGeeks [https://www.geeksforgeeks.org/return-keyword-java/#:~:text=In%20Java%2C%20return%20is%20a,Methods%20not%20returning%20a%20value](https://www.geeksforgeeks.org/return-keyword-java/#:~:text=In%20Java%2C%20return%20is%20a,Methods%20not%20returning%20a%20value)
 - ExamTray [https://www.examtray.com/java/java-program-how-print-random-element-or-index-array-arraylist](https://www.examtray.com/java/java-program-how-print-random-element-or-index-array-arraylist)
 - MDN [https://developer.mozilla.org/en-US/](https://developer.mozilla.org/en-US/)
 - MDN Loops and Iterations [https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Loops_and_iteration](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Loops_and_iteration)
- 
+
+# Tutors
+The tutor I worked with (Alexis San Javier) helped me understand how my variables could contain strings for the final password variable, and too how we could create a variable that would catch all of our subsequent additions or modifications in the function. For example var passwordFinal = ""; and var password - "";
+Similarly he helped me better understand how our boolean inputs from the prompts could change how the function works. Lastly we worked together on iterating our variables, but most of my understanding of how that would work within the function came from my peers.
+
+# Peers
 The peers I worked with helped me to better understand the last section of my generatePassword function, and together we brainstormed and implemented the ability to restart our generate password function if the first prompt was false (i.e. if "Would you like to generate a new password" was false). I helped them to better understand the prompt variables and how their boolean characteristics would change the function.
  
 - Braxton Minkey [https://github.com/BrackyM](https://github.com/BrackyM)
