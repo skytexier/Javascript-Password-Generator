@@ -50,7 +50,7 @@ function generatePassword() {
 
   var specialChoice = confirm("Would you like to include special characters?")
   if (specialChoice == true) {
-    passwordFinal = passwordFinal + "~'!@#$%^&*()-_+={}[]:;.<>?/"
+    passwordFinal = passwordFinal + "~'!@#$%^&*()-_+={}[]:;.<>?/`"
     alert("Your password will include special characters!");
   } else {
     alert("Your password will NOT include special characters!");
